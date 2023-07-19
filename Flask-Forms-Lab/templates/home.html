@@ -10,9 +10,9 @@
 <h2>Facebook Search Bar</h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
+<!-- 
 <ul id="myUL">
-  <li><a href="#">Adele</a></li>
+  <li><a href="#">afu 3</a></li>
   <li><a href="#">Agnes</a></li>
   <li><a href="#">Billy</a></li>
   <li><a href="#">Bob</a></li>
@@ -21,6 +21,24 @@
   <li><a href="#">Cindy</a></li>
   <li><a href="#">Loai</a></li>
 </ul>
+ -->
+
+
+{% for name in friends %} 
+
+    <div>
+        <ul id="myUL">
+            <li> 
+                <a href="/friend_exists/{{name}}">  {{name}} </a> 
+            </li>
+        </ul>
+    </div>
+
+{% endfor %}
+
+
+
+
 
 <script>
 function myFunction() {

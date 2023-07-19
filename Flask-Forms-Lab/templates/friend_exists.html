@@ -6,11 +6,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+<style type="text/css"> 
+	body {background-color:aquamarine;}
 
+</style>
 </head>
 <body>
 
-
+<h1> {{n}}</h1>
+{% if n in friends %}
+    <p> true </p>
+{% else %}
+	<p> false </p>
+            {% endif %}
 
 </body>
 </html>
+
